@@ -1,0 +1,18 @@
+@import url("reset.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300");
+
+*{ box-sizing:border-box; ms-box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+html, body {height: 100%; width:100%;margin:0;}
+html{font-family: 'Open Sans', sans-serif;font-size:100%;color:#363A3F;}
+select, input, textarea, button{border:1px solid #999; font-size:.8rem; padding:6px; border-radius: 3px;}
+button{cursor: pointer;}
+input:focus, textarea:focus, select:focus {outline: none;border:1px solid #4078c0;box-shadow: 0 0 10px #719ECE;}
+select:not([class*="ui-datepicker"]){-webkit-appearance: none;-moz-appearance: none; appearance: none; background: url(../img/icone/asc.gif) no-repeat right center #fff !important;}
+
+.wrap{position:relative;width:70%;margin:0px auto;}
+header#main{padding:10px;background: #f5f5f5;border-bottom: 1px solid #e5e5e5;font-size:2rem;}
+.row{margin:10px 0px;}
+label, input{display:inline-block;}
+label{width:80px;}
+input[type=number]{width:50px;}
