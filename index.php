@@ -16,35 +16,42 @@
         <header id="main">
             <div class="wrap"><h1><i class="fa fa-pie-chart"></i> geTTexture</h1></div>
         </header>
-        <section id="valori" class="wrap">
-            <header class="row">
-                <h1>Inserisci la percentuale di sabbia e argilla, il sistema calcolerà la quantità di limo e il tipo di texture del suolo</h1>
-            </header>
-            <form name="valori" action="#" method="post">
-                <div class="row">
-                    <label>Sabbia</label>
-                    <input name="sabbia" type="number" placeholder="%" min="0" max="100" value="" class="perc" required>
-                </div>
-                <div class="row">
-                    <label>Argilla</label>
-                    <input name="argilla" type="number" placeholder="%" min="0" value="" class="perc" required>
-                </div>
-                <div class="row">
-                    <label>Limo</label>
-                    <input name="limo" type="number" placeholder="%" readonly="false" value="" class="perc">
-                </div>
-                <div class="row">
-                    <button name="submit" type="submit">calcola</button>
-                    <button name="reset" type="reset">azzera</button>
-                </div>
-                <div class="row">
-                    <div id="risultato"></div>
-                </div>
-            </form>
-        </section>
-        <section id="canvas" class="wrap">
+        <div class="wrap">
+            <section id="valori">
+                <header class="row">
+                    <h1>Calcola la matrice del suolo</h1>
+                    <p>Inserisci la percentuale di sabbia e argilla, il sistema calcolerà la quantità di limo e il tipo di texture del suolo</p>
+                    <p>Se non sai come ottenere le percentuali dei vari componenti del suolo, <a href="#howto">leggi questo breve how-to</a></p>
+                </header>
+                <form name="valori" action="#" method="post">
+                    <div class="row">
+                        <label>Sabbia</label>
+                        <input name="sabbia" type="number" placeholder="%" min="0" max="100" value="" class="perc" required>
+                    </div>
+                    <div class="row">
+                        <label>Argilla</label>
+                        <input name="argilla" type="number" placeholder="%" min="0" value="" class="perc" required>
+                    </div>
+                    <div class="row">
+                        <label>Limo</label>
+                        <input name="limo" type="number" placeholder="%" readonly="false" value="" class="perc">
+                    </div>
+                    <div class="row">
+                        <button name="submit" type="submit">calcola</button>
+                        <button name="reset" type="reset">azzera</button>
+                    </div>
+                    <div class="row">
+                        <div id="risultato"></div>
+                    </div>
+                </form>
+            </section>
+            <section id="canvas">
 
-        </section>
+            </section>
+            <section id="howto">
+                <header class="row"><h1>Come calcolare la matrice</h1></header>
+            </section>
+        </div>
         <footer></footer>
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script src="js/init.js"></script>
