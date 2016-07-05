@@ -40,13 +40,12 @@
                         <button name="submit" type="submit">calcola</button>
                         <button name="reset" type="reset">azzera</button>
                     </div>
-                    <div class="row">
-                        <div id="risultato"></div>
-                    </div>
                 </form>
+                <div id="risultatoContent"><div id="risultato"></div></div>
             </section>
-            <section id="canvas">
-
+            <section id="canvasContent">
+                <div id="svgContent"><?php echo file_get_contents("img/canvas.svg"); ?></div>
+                <canvas></canvas>
             </section>
             <section id="howto">
                 <header class="row"><h1>Come calcolare la matrice</h1></header>
