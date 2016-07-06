@@ -4,16 +4,11 @@
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="670"
-   height="590"
-   id="svg2"
-   version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="canvas.svg">
+   height="590">
   <g
      inkscape:groupmode="layer"
      id="layer3"
@@ -29,7 +24,7 @@
     <path
        style="fill:#ffffff;fill-opacity:1;stroke:#ff0004;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 186.01864,249.27205 123.21336,356.388 249.63388,356.33984 Z"
-       id="argillosabbioso"
+       id="argillososabbioso"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc" />
     <path
@@ -281,39 +276,39 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:82.99999833%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
-       x="-148.29613"
-       y="255.45013"
+       x="-173.63565"
+       y="255.33676"
        id="text3866-8-64"
        sodipodi:linespacing="82.999998%"
-       transform="matrix(0.56196357,-0.82716198,0.82716198,0.56196357,0,0)"><tspan
+       transform="matrix(0.50423126,-0.86356866,0.86356866,0.50423126,0,0)"><tspan
          sodipodi:role="line"
-         x="-148.29613"
-         y="255.45013"
+         x="-173.63565"
+         y="255.33676"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:82.99999833%;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans';text-align:center;text-anchor:middle"
          id="tspan3891-0">% argilla</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:82.99999833%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-       x="438.49127"
-       y="-310.93179"
+       x="498.70822"
+       y="-305.34869"
        id="text3866-8-64-4"
        sodipodi:linespacing="82.999998%"
-       transform="matrix(0.51940451,0.8545285,-0.8545285,0.51940451,0,0)"><tspan
+       transform="matrix(0.49816532,0.86708207,-0.86708207,0.49816532,0,0)"><tspan
          sodipodi:role="line"
-         x="438.49127"
-         y="-310.93179"
+         x="498.70822"
+         y="-305.34869"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:82.99999833%;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans';text-align:center;text-anchor:middle"
          id="tspan3891-0-6">% limo</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:82.99999833%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none"
-       x="305.01086"
-       y="590.73566"
+       x="327.23184"
+       y="586.73566"
        id="text3866-8-64-2"
        sodipodi:linespacing="82.999998%"><tspan
          sodipodi:role="line"
-         x="305.01086"
-         y="590.73566"
+         x="327.23184"
+         y="586.73566"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28px;line-height:82.99999833%;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans';text-align:center;text-anchor:middle"
          id="tspan3891-0-67">% sabbia</tspan></text>
     <text

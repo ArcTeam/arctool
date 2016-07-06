@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" />
-        <meta name="generator" content="atom" >
-        <meta name="author" content="Giuseppe Naponiello" >
-        <meta name="robots" content="INDEX,FOLLOW" />
-        <meta name="copyright" content="&copy;2015 Arc-Team" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
-        <meta name="description" content="" />
-        <meta name="keywords"  content="" />
+        <meta charset="utf-8">
+        <meta name="generator" content="atom">
+        <meta name="author" content="Giuseppe Naponiello">
+        <meta name="robots" content="INDEX,FOLLOW">
+        <meta name="copyright" content="&copy;2015 Arc-Team">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+        <meta name="description" content="">
+        <meta name="keywords"  content="">
+        <title>geTTexture - ATOR</title>
+        <link rel="icon" href="img/favicon.ico"/>
         <link href="css/stile.css" rel="stylesheet" media="all" >
-        <title>Arc-Team Open Research</title>
     </head>
     <body>
         <header id="main">
@@ -45,7 +46,7 @@
             </section>
             <section id="canvasContent">
                 <div id="svgContent"><?php echo file_get_contents("img/canvas.svg"); ?></div>
-                <canvas></canvas>
+                <canvas id="canvas"></canvas>
             </section>
             <section id="howto">
                 <header class="row"><h1>Come calcolare la matrice</h1></header>
