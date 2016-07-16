@@ -1,3 +1,22 @@
+<?php
+session_start();
+define('FACEBOOK_SDK_V4_SRC_DIR', __DIR__ . '/class/facebook-sdk-v5/');
+require_once __DIR__ . '/class/facebook-sdk-v5/autoload.php';
+$fb = new Facebook\Facebook([
+  'app_id' => '498077220384026',
+  'app_secret' => '79ebf5d0be20a1fd44213ec63216f4e2',
+  'default_graph_version' => 'v2.5',
+]);
+
+
+$helper = $fb->getRedirectLoginHelper();
+$permissions = ['email', 'public_profile']; // optional
+$loginUrl = $helper->getLoginUrl('http://localhost/callback.php', $permissions);
+
+echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
+?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -50,6 +69,9 @@
             </section>
             <section id="howto">
                 <header class="row"><h1>Come calcolare la matrice</h1></header>
+                <div class="wrap">
+                    <?php echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>'; ?>
+                </div>
             </section>
         </div>
         <footer></footer>
