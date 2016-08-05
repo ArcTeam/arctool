@@ -1,4 +1,4 @@
-function getTexture(s,a,l){
+function getTexture(s,a,l,canwhidth,canheight){
     console.log("sabbia: "+s+"\nargilla: "+a+"\nlimo: "+l);
     $("path").attr('class','');
     $("#risultatoContent").show();
@@ -17,17 +17,17 @@ function getTexture(s,a,l){
     else if(a >= 40 && s <= 45 && l < 40){res.text('Argilloso'); $("#argilloso").attr('class','gettexture');}
     else{res.text('Errore nel calcolo, riprova');}
 
-    var xOff = 627;
-    var yOff = 538;
+    var xOff = canwhidth;
+    var yOff = canheight;
     var y = yOff-(yOff*parseFloat(a)*0.01);
     var h = yOff - y;
     var l = (2*h)/1.73;
     var x = xOff-(xOff*parseFloat(s)*0.01)-(l/2);
-    pallino(x,y)
+    pallino(x,y, xOff, yOff)
 }
 
-function pallino(x,y){
-    ctx.clearRect(0, 0, 627, 538);
+function pallino(x,y,xOff,yOff){
+    ctx.clearRect(0, 0, xOff, yOff);
     ctx.beginPath();
     ctx.arc(x, y, 5, 0, Math.PI*2, false);
     ctx.closePath();
