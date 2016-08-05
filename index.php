@@ -32,6 +32,9 @@ $loginUrl = $helper->getLoginUrl('http://localhost/callback.php', $permissions);
     </head>
     <body>
         <header id="main">
+            <div class="ribbon-wrapper">
+                <div class="ribbon"></div>
+            </div>
             <div class="wrap"><h1><i class="fa fa-pie-chart"></i> geTTexture</h1></div>
         </header>
         <div class="wrap">
@@ -67,7 +70,7 @@ $loginUrl = $helper->getLoginUrl('http://localhost/callback.php', $permissions);
             </section>
             <section id="howto">
                 <header class="row"><h1>Come calcolare la matrice</h1></header>
-                <div class="wrap">
+                <div class="wrap" style="display:none">
                     <?php echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>'; ?>
                 </div>
             </section>
@@ -75,13 +78,13 @@ $loginUrl = $helper->getLoginUrl('http://localhost/callback.php', $permissions);
         <footer>
             <div id="footerWrap">
                 <div>
-                    <span>Powered by:</span><span><a href="www.arc-team.com" title="Arc-Team web site" target="_blank"><img src="img/arcteam.png" id="logoAT" class="logoImg"></a></span>
+                    <span>Powered by:</span><span><a href="www.arc-team.com" title="Arc-Team web site" target="_blank"><img src="img/arcteam_small.png" id="logoAT" class="logoImg"></a></span>
                 </div>
                 <div>
                     <span>Licensed by: </span><span><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png"  class="logoImg"></a></span>
                 </div>
                 <div>
-                    <span>Available on: </span><span> <a href="www.arc-team.com" title="Get Code" target="_blank"><img src="img/github.png" id="logoGH" class="logoImg"></a> </span>
+                    <span>Available on: </span><span> <a href="www.arc-team.com" title="Get Code" target="_blank"><img src="img/github_small.png" id="logoGH" class="logoImg"></a> </span>
                 </div>
             </div>
         </footer>

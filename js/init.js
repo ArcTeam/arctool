@@ -29,7 +29,7 @@ canvas.height = canheight;
 var ctx = canvas.getContext("2d");
 
 $(document).ready(function(){
-    console.log(breakpoint.value);
+    $(".ribbon").on("click", function(){ window.open('www.arc-team.com','_blank'); });
     $("#svgContent").load("img/"+file);
     $("#risultatoContent").hide();
     $("input[name=sabbia]").on('change', function(){ $("input[name=argilla]").attr('max',100-$(this).val()); });
