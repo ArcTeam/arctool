@@ -1,0 +1,89 @@
+@import url("reset.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300");
+
+/******* ELEMENTI GENERICI ********/
+*{ box-sizing:border-box; ms-box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+html, body {height: 100%; width:100%;margin:0;}
+html{font-family: 'Open Sans', sans-serif;font-size:100%;color:#363A3F;}
+button{cursor: pointer;}
+input:focus, textarea:focus, select:focus {outline: none;border:1px solid #4078c0;box-shadow: 0 0 10px #719ECE;}
+select:not([class*="ui-datepicker"]){-webkit-appearance: none;-moz-appearance: none; appearance: none; background: url(../img/icone/asc.gif) no-repeat right center #fff !important;}
+label, input{display:inline-block;}
+select, input, textarea, button{border:1px solid #999; font-size:.8rem; padding:6px; border-radius: 3px;}
+
+/******* ELEMENTI SPECIFICI ********/
+header#main{padding:10px;background: #f5f5f5;border-bottom: 1px solid #e5e5e5;}
+#canvasContent{position: relative; margin: 20px auto; padding: 0px; z-index: 1;}
+#svgContent{position:absolute;top:0;left:0;z-index:2;}
+canvas{position: absolute;top: 0; left: 0; padding: 0px; z-index: 3;}
+form[name='valori']{ display: inline-block; vertical-align:middle;}
+#risultatoContent{position:relative;display: inline-block; text-align:center;}
+#risultato{padding:10px 20px;text-align:center;font-size:2rem;text-transform:uppercase;border:1px solid #363A3F;border-radius:5px;}
+footer{padding: 10px; background: #999;font-size: .8rem;}
+#footerWrap{margin:0px auto;}
+
+/******* CLASSI ********/
+.wrap{position:relative;margin:0px auto;}
+.row h1{font-size: 1.5rem; display: inline-block; border-bottom: 1px solid #363A3F; margin-bottom: 20px;}
+.gettexture{fill: rgba(255, 0, 0, 0.5) !important;}
+.logoImg{vertical-align:middle;}
+/* Smartphones ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+    body:before {content: "smartphone"; display: none;}
+    header#main{font-size:1.4rem;}
+    .row{margin:5px 0px;}
+    .row h1{font-size: 1.3rem;}
+    .row p{font-size: .9rem;}
+    .wrap{width:90%;}
+    form[name='valori']{width:80%;margin:0px 10%;}
+    label, input[type=number]{width:100px;}
+    label, select, input, textarea, button{font-size:1rem;}
+    #risultatoContent{width:100%;}
+    #canvasContent{width: 318px; height: 280px;}
+    canvas{margin: 3px 0px 0px 5px;}
+    #footerWrap{width:70%;}
+    footer span:nth-child(1){width:85px; display: inline-block;}
+
+    .ribbon-wrapper {width: 100px; height: 114px; overflow: hidden; position: absolute; top: -3px; right: 0px;}
+    .ribbon {-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); position: relative; padding: 7px 0; left: -166px; top: 36px; width: 445px; height:22px; background:#fff url("../img/arcteam_small.png") no-repeat center top; -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); box-shadow: 0px 0px 3px rgba(0,0,0,0.3); }
+    .ribbon-green:before, .ribbon-green:after { content: ""; border-top: 3px solid #6e8900; border-left: 3px solid transparent; border-right: 3px solid transparent; position:absolute; bottom: -3px;}
+    .ribbon-green:before {left: 0;}
+    .ribbon-green:after {right: 0;}​
+
+}
+
+/* Tablets ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    body:before { content: "tablet"; display: none; }
+    .wrap{position:relative;width:70%;margin:0px auto;}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    body:before { content: "desktop"; display: none;}
+    header#main{font-size:2rem;}
+    .ribbon-wrapper {width: 230px; height: 180px; overflow: hidden; position: absolute; top: -3px; right: 0px;}
+    .ribbon {cursor:pointer;position: relative; padding: 7px 0; left: -35px; top: 57px; width: 392px; height:40px; background:#fff url("../img/arcteam_logo.png") no-repeat center top; -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg);  -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); box-shadow: 0px 0px 3px rgba(0,0,0,0.3); }
+    .ribbon-green:before, .ribbon-green:after { content: ""; border-top: 3px solid #6e8900; border-left: 3px solid transparent; border-right: 3px solid transparent; position:absolute; bottom: -3px;}
+    .ribbon-green:before {left: 0;}
+    .ribbon-green:after {right: 0;}​
+    .row{margin:10px 0px;}
+    .row h1{font-size: 1.5rem; width: 60%;}
+    .wrap{width:70%;}
+    form[name='valori']{width: 30%;}
+    label{width:80px;}
+    input[type=number]{width:50px;}
+    select, input, textarea, button{font-size:.8rem;}
+    #risultatoContent{width:69%;}
+    #canvasContent{width: 670px; height: 590px;}
+    canvas{margin: 5px 0px 0px 15px;}
+    #footerWrap{width:50%;}
+    #footerWrap div{display:inline-block;width:30%;margin:0px 5px;}
+}
+
+
+/*
+canvas = 300 x 255
+canvas content = 318 x 280
+*/
