@@ -1,0 +1,58 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300");
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, textarea, input, select {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
+table {border-collapse: collapse; border-spacing: 0;table-layout:fixed !important;}
+ul{list-style-type:none;}
+caption, th, td {text-align: left; font-weight: normal;}
+caption{font-size:12px;}
+table, td, th {vertical-align: top;}
+blockquote:before, blockquote:after, q:before, q:after {content: "";}
+blockquote, q {quotes: "" "";}
+a img {border: none;}
+:focus {outline: 0;}
+input, textarea, select{box-sizing:content-box;ms-box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box; }
+a{ text-decoration: none;}
+
+/******* ELEMENTI GENERICI ********/
+*{ box-sizing:border-box; ms-box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+html, body {height: 100%; width:100%;margin:0;}
+html{font-family: 'Open Sans', sans-serif;font-size:100%;color:#363A3F;}
+button{cursor: pointer;}
+input:focus, textarea:focus, select:focus {outline: none;border:1px solid #4078c0;box-shadow: 0 0 10px #719ECE;}
+select:not([class*="ui-datepicker"]){-webkit-appearance: none;-moz-appearance: none; appearance: none; background: url(../../img/asc.gif) no-repeat right center #fff !important;}
+label, input{display:inline-block;}
+select, input, textarea, button{border:1px solid #999; font-size:.8rem; padding:6px; border-radius: 3px;}
+footer{padding: 10px; background: #999;font-size: .8rem;}
+
+/*********** ELEMENTI SPECIFICI GLOBALI *************/
+#mainContent{min-height: 80%;}
+#footerWrap{margin:0px auto;}
+#footerWrap div{display:inline-block;width:30%;margin:0px 5px;}
+
+
+/* Smartphones ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+    body:before {content: "smartphone"; display: none;}
+    header#main{font-size:1.4rem;}
+    .row{margin:5px 0px;}
+    .row h1{font-size: 1.3rem;}
+    .row p{font-size: .9rem;}
+    .wrap{width:90%;}
+}
+
+/* Tablets ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    body:before { content: "tablet"; display: none; }
+    .wrap{width:70%;}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    body:before { content: "desktop"; display: none;}
+    header#main{font-size:2rem;}
+    #footerWrap{width:50%;}
+    .row{margin:10px 0px;}
+    .row h1{font-size: 1.5rem; width: 60%;}
+    .wrap{width:70%;}
+}

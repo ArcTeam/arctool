@@ -1,34 +1,13 @@
 <?php
 session_start();
-define('FACEBOOK_SDK_V4_SRC_DIR', __DIR__ . '/class/facebook-sdk-v5/');
-require_once __DIR__ . '/class/facebook-sdk-v5/autoload.php';
-$fb = new Facebook\Facebook([
-  'app_id' => '498077220384026',
-  'app_secret' => '79ebf5d0be20a1fd44213ec63216f4e2',
-  'default_graph_version' => 'v2.7',
-]);
-
-
-$helper = $fb->getRedirectLoginHelper();
-$permissions = ['email', 'public_profile']; // optional
-$loginUrl = $helper->getLoginUrl('http://localhost/callback.php', $permissions);
 ?>
 
 
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="generator" content="atom">
-        <meta name="author" content="Giuseppe Naponiello">
-        <meta name="robots" content="INDEX,FOLLOW">
-        <meta name="copyright" content="&copy;2015 Arc-Team">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
-        <meta name="description" content="">
-        <meta name="keywords"  content="">
-        <title>geTTexture - ATOR</title>
-        <link rel="icon" href="img/favicon.ico"/>
-        <link href="css/stile.css" rel="stylesheet" media="all" >
+        <?php require('../inc/meta.inc'); ?>
+        <title>geTTexture - ArcTool</title>
     </head>
     <body>
         <header id="main">
@@ -75,21 +54,9 @@ $loginUrl = $helper->getLoginUrl('http://localhost/callback.php', $permissions);
                 </div>
             </section>
         </div>
-        <footer>
-            <div id="footerWrap">
-                <div>
-                    <span>Powered by:</span><span><a href="www.arc-team.com" title="Arc-Team web site" target="_blank"><img src="img/arcteam_small.png" id="logoAT" class="logoImg"></a></span>
-                </div>
-                <div>
-                    <span>Licensed by: </span><span><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png"  class="logoImg"></a></span>
-                </div>
-                <div>
-                    <span>Available on: </span><span> <a href="www.arc-team.com" title="Get Code" target="_blank"><img src="img/github_small.png" id="logoGH" class="logoImg"></a> </span>
-                </div>
-            </div>
-        </footer>
+        <?php require_once('../inc/footer.php'); ?>
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <script src="js/init.js"></script>
+        <script src="js/initGetTexture.js"></script>
         <script src="js/function.js"></script>
     </body>
 </html>

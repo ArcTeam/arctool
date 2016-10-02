@@ -1,0 +1,31 @@
+@import url("../css/reset.css");
+
+/******* ELEMENTI SPECIFICI ********/
+header#main{padding:10px;background: #f5f5f5;border-bottom: 1px solid #e5e5e5;}
+
+/******* CLASSI ********/
+.wrap{position:relative;margin:0px auto;}
+.row h1{font-size: 1.5rem; display: inline-block; border-bottom: 1px solid #363A3F; margin-bottom: 20px;}
+.logoImg{vertical-align:middle;}
+
+/* Smartphones ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+    body:before {content: "smartphone"; display: none;}
+    header#main{font-size:1.4rem;}
+}
+
+/* Tablets ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    body:before { content: "tablet"; display: none; }
+    .wrap{width:70%;}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    body:before { content: "desktop"; display: none;}
+    header#main{font-size:2rem;}
+    #footerWrap{width:50%;}
+    .row{margin:10px 0px;}
+    .row h1{font-size: 1.5rem; width: 60%;}
+    .wrap{width:70%;}
+}
