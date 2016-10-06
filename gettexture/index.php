@@ -1,13 +1,14 @@
 <?php
 session_start();
 ?>
-
-
 <!DOCTYPE html>
 <html>
     <head>
         <?php require('../inc/meta.inc'); ?>
         <title>geTTexture - ArcTool</title>
+        <style>
+            input[name=us]{width:50px;}
+        </style>
     </head>
     <body>
         <header id="main">
@@ -22,8 +23,14 @@ session_start();
                     <h1>Calcola la matrice del suolo</h1>
                     <p>Inserisci la percentuale di sabbia e argilla, il sistema calcolerà la quantità di limo e il tipo di texture del suolo</p>
                     <p>Se non sai come ottenere le percentuali dei vari componenti del suolo, <a href="#howto">leggi questo breve how-to</a></p>
+                    <p>Il sistema tiene in memoria i dati inseriti finché non aggiorni o cambi pagina, se vuoi puoi scaricarli liberamente in formato csv</p>
+                    <p>In alternativa puoi registrarti al servizio per salvare i tuoi dati in maniera permanente. In questo modo potrai creare il tuo archivio personale aggiungendo anche il nome del sito, e scaricare i dati ogni volta che vuoi</p>
                 </header>
                 <form name="valori" action="#" method="post">
+                    <div class="row">
+                        <label>US</label>
+                        <input name="us" type="text" value="0" class="perc">
+                    </div>
                     <div class="row">
                         <label>Sabbia</label>
                         <input name="sabbia" type="number" placeholder="%" min="0" max="100" value="" class="perc" required>
@@ -39,9 +46,23 @@ session_start();
                     <div class="row">
                         <button name="submit" type="submit">calcola</button>
                         <button name="reset" type="reset">azzera</button>
+                        <button name="csvLink" type="button" style="display:none">guarda dati</button>
                     </div>
                 </form>
                 <div id="risultatoContent"><div id="risultato"></div></div>
+                <div id='dataContent'>
+                    <table id=data>
+                        <thead>
+                            <tr>
+                                <th></th><th>US</th><th>% Sabbia</th><th>% Argilla</th><th>% Limo</th><th>Matrice</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                    <a href="#" id="closeDiv">chiudi</a>
+                    <a href="#" id="csv">scarica csv</a>
+                </div>
             </section>
             <section id="canvasContent">
                 <div id="svgContent"><?php echo file_get_contents("img/canvas.svg"); ?></div>
@@ -49,9 +70,6 @@ session_start();
             </section>
             <section id="howto">
                 <header class="row"><h1>Come calcolare la matrice</h1></header>
-                <div class="wrap" style="display:none">
-                    <?php echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>'; ?>
-                </div>
             </section>
         </div>
         <?php require_once('../inc/footer.php'); ?>

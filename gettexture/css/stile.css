@@ -9,6 +9,7 @@ form[name='valori']{ display: inline-block; vertical-align:middle;}
 #risultatoContent{position:relative;display: inline-block; text-align:center;}
 #risultato{padding:10px 20px;text-align:center;font-size:2rem;text-transform:uppercase;border:1px solid #363A3F;border-radius:5px;}
 #footerWrap{margin:0px auto;}
+#csvLink{ border: 1px solid #999; font-size: .8rem; padding: 6px; border-radius: 3px; vertical-align: top;}
 
 /******* CLASSI ********/
 .wrap{position:relative;margin:0px auto;}
@@ -24,7 +25,7 @@ form[name='valori']{ display: inline-block; vertical-align:middle;}
     #canvasContent{width: 318px; height: 280px;}
     canvas{margin: 3px 0px 0px 5px;}
     .ribbon-wrapper {width: 100px; height: 114px; overflow: hidden; position: absolute; top: -3px; right: 0px;}
-    .ribbon {-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); position: relative; padding: 7px 0; left: -166px; top: 36px; width: 445px; height:22px; background:#fff url("../../img/arcteam_small.png") no-repeat center top; -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); box-shadow: 0px 0px 3px rgba(0,0,0,0.3); }
+    .ribbon {-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); position: relative; padding: 7px 0; left: -166px; top: 36px; width: 445px; height:22px; background:#fff url("../../img/loghi/arcteam_small.png") no-repeat center top; -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); box-shadow: 0px 0px 3px rgba(0,0,0,0.3); }
     .ribbon-green:before, .ribbon-green:after { content: ""; border-top: 3px solid #6e8900; border-left: 3px solid transparent; border-right: 3px solid transparent; position:absolute; bottom: -3px;}
     .ribbon-green:before {left: 0;}
     .ribbon-green:after {right: 0;}​
@@ -39,17 +40,24 @@ form[name='valori']{ display: inline-block; vertical-align:middle;}
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
     .ribbon-wrapper {width: 230px; height: 180px; overflow: hidden; position: absolute; top: -3px; right: 0px;}
-    .ribbon {cursor:pointer;position: relative; padding: 7px 0; left: -35px; top: 57px; width: 392px; height:40px; background:#fff url("../../img/arcteam_logo.png") no-repeat center top; -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg);  -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); box-shadow: 0px 0px 3px rgba(0,0,0,0.3); }
+    .ribbon {cursor:pointer;position: relative; padding: 7px 0; left: -35px; top: 57px; width: 392px; height:40px; background:#fff url("../../img/loghi/arcteam_logo.png") no-repeat center top; -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg);  -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3); box-shadow: 0px 0px 3px rgba(0,0,0,0.3); }
     .ribbon-green:before, .ribbon-green:after { content: ""; border-top: 3px solid #6e8900; border-left: 3px solid transparent; border-right: 3px solid transparent; position:absolute; bottom: -3px;}
     .ribbon-green:before {left: 0;}
     .ribbon-green:after {right: 0;}​
     .row{margin:10px 0px;}
     .row h1{font-size: 1.5rem; width: 60%;}
     .wrap{width:70%;}
-    form[name='valori']{width: 30%;}
+    form[name='valori']{width: 25%;}
     label{width:80px;}
     input[type=number]{width:50px;}
-    #risultatoContent{width:69%;}
+    #risultatoContent{width:70%;}
     #canvasContent{width: 670px; height: 590px;}
     canvas{margin: 5px 0px 0px 15px;}
+    div#dataContent{position:absolute;top:0px;left:20%;right:20%;height:300px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);background:#fff;border:1px solid rgba(0, 0, 0, 0.7);padding:20px;font-size:.9rem;display:none;}
+    table#data{width:100%}
+    #data tr{border-bottom:1px solid #000;}
+    #data th, #data td{text-align:center;}
+    #data tbody tr:nth-child(even){background:#eee;}
+    #data thead tr th:first-child{width:20px;cursor:pointer;}
+    #data thead tr th:last-child{width:40%;}
 }

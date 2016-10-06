@@ -1,0 +1,11 @@
+.scheda{ display: inline-block; width: 30%; height:370px; margin: 20px; border: 1px solid #d3d3d3; border-radius: 3px;}
+.scheda header{font-size: 1.5rem; padding: 5px 10px; border-radius: 3px 3px 0px 0px; height:50px;}
+.imgContent{ position: relative; width: 40%; margin-right: 10px; display: inline-block;}
+.imgContent img{ position: relative; width: 100%;}
+.scheda article{height:294px; position: relative; display: inline-block; width: 57%; vertical-align: top; font-size: .8rem;}
+.scheda footer{padding: 3px 10px !important;}
+.label, .data{display:inline-block;}
+.label{width:80px;}
+.rowButton{margin:0px !important;padding:5px 3px;}
+.rowButton:nth-child(even){background:#eee;}
+.descrizione{height:150px;overflow:auto;}

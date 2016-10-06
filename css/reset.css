@@ -11,22 +11,22 @@ blockquote:before, blockquote:after, q:before, q:after {content: "";}
 blockquote, q {quotes: "" "";}
 a img {border: none;}
 :focus {outline: 0;}
-input, textarea, select{box-sizing:content-box;ms-box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box; }
+input,textarea,select{box-sizing:content-box;ms-box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box; }
 a{ text-decoration: none;}
-
+textarea{height:20px;}
+input[type="checkbox"]{vertical-align: middle;}
 /******* ELEMENTI GENERICI ********/
 *{ box-sizing:border-box; ms-box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
 html, body {height: 100%; width:100%;margin:0;}
 html{font-family: 'Open Sans', sans-serif;font-size:100%;color:#363A3F;}
 button{cursor: pointer;}
 input:focus, textarea:focus, select:focus {outline: none;border:1px solid #4078c0;box-shadow: 0 0 10px #719ECE;}
-select:not([class*="ui-datepicker"]){-webkit-appearance: none;-moz-appearance: none; appearance: none; background: url(../../img/asc.gif) no-repeat right center #fff !important;}
+select:not([class*="ui-datepicker"]){-webkit-appearance: none;-moz-appearance: none; appearance: none; background: url(../img/loghi/asc.gif) no-repeat right center #fff !important; padding-right:30px;}
 label, input{display:inline-block;}
-select, input, textarea, button{border:1px solid #999; font-size:.8rem; padding:6px; border-radius: 3px;}
+select, input, textarea, button{border:1px solid #999; font-size:.8rem; padding:6px; border-radius: 3px;vertical-align: top;}
 footer{padding: 10px; background: #999;font-size: .8rem;}
-
+form{margin:30px auto;}
 /*********** ELEMENTI SPECIFICI GLOBALI *************/
-#mainContent{min-height: 80%;}
 #footerWrap{margin:0px auto;}
 #footerWrap div{display:inline-block;width:30%;margin:0px 5px;}
 

@@ -1,12 +1,65 @@
 @import url("../css/reset.css");
 
 /******* ELEMENTI SPECIFICI ********/
-header#main{padding:10px;background: #f5f5f5;border-bottom: 1px solid #e5e5e5;}
+header#main{border-bottom: 1px solid #e5e5e5;height:50px;font-weight:bold;}
+nav#mainNav{display:inline-block;text-align:right;}
+nav#mainNav a, a.signin{display: inline-block;width:50px;height:50px;text-align:center;color:#363A3F;border-left:1px solid #e5e5e5;border-right:1px solid #e5e5e5;}
+nav#mainNav a:nth-child(2){margin: 0px -10px;}
+nav#mainNav a:first-child{border-right:none !important;}
+nav#mainNav a:last-child{border-left:none !important;}
+nav#mainNav a.signin{border-left:1px solid #e5e5e5 !important;}
+nav#mainNav a:hover{color:#1d9e1a;}
+section#mainContent {padding: 20px 0px; background: #475775; color: #fff;}
+section#mainContent p{font-size: 1.2rem;margin-bottom:10px;}
+footer{background: #f3f3f3;}
+header.main{ display: block; width: 95%; border-bottom: 1px solid #999; font-size: 1.8rem; color: #999;margin-top:30px}
 
-/******* CLASSI ********/
+section.form{width:50%;margin:30px auto;}
+section.form input { border-radius: 0px 3px 3px 0px !important; width: 85%; font-size: 1.25rem !important; line-height: 1.35em;}
+
+/******* PULSANTI E LINK ******************/
+.azzurro, .toolbar{color:#fff;background: #0088cc;border: 1px solid #0D6FA0;}
+.azzurro:hover{background: #0D6FA0;}
+.rosso, .error{background-color: #ffcbcb; border-color: #b50000; color: #1e1212;}
+.rosso:hover{background-color: #1e1212;}
+.giallo, .alert{color:#685815; background-color: #ffef9f; border-color: #dcca6f;}
+.giallo:hover{background-color: #dcca6f;}
+.verde, .success{color:#fff;background:#1d9e1a;border:1px solid #1b8c19;}
+.verde:hover{background:#1b8c19;}
+.grigio{color:#363A3F;}
+
+
+/********** SOCIAL LOGIN *************************************************************/
+ul#socialList li{display:inline-block;width:48%; margin:3px;}
+.socialLog{padding:3px 5px; width:100%; display: block;}
+.socialLog i{border-right: 1px solid rgba(54,58,63,0.45);text-align: center;padding: 5px;margin-right: 10px; display: inline-block; width: 30px;}
+
+#facebookLogin{background-color: #4267b2;border:1px solid #365899; color:#fff;}
+#facebookLogin:hover{background-color: #365899;}
+
+#twitterLogin{background-color: #1AACE7;border:1px solid #09719A; color:#fff;}
+#twitterLogin:hover{background-color: #09719A;}
+
+#googleLogin{background-color: #DF4A32; border:1px solid #B83621; color:#fff;}
+#googleLogin:hover{background-color: #B83621;}
+
+#githubLogin{background-color: #444444;border:1px solid #3a3131; color:#fff;}
+#githubLogin:hover{background-color: #3a3131;}
+
+#linkedinLogin{background-color: #d3d3d3;border:1px solid #ababab; color:#363A3F;}
+#linkedinLogin:hover{background-color: #ababab;}
+
+/******* CLASSI GENERICHE ********/
+.rowButton{width:100%;margin:10px 0px;}
+.iForm { border: 1px solid #999 !important; border-right: none !important; border-radius: 3px 0px 0px 3px; font-size: 1.7rem; padding: 6px; display: inline-block; margin-right: -5px;}
+.bForm {border-left: 1px transparent !important;}
 .wrap{position:relative;margin:0px auto;}
 .row h1{font-size: 1.5rem; display: inline-block; border-bottom: 1px solid #363A3F; margin-bottom: 20px;}
 .logoImg{vertical-align:middle;}
+.red{color:#b7100a;}
+.radius{border-radius:3px;}
+.transition, a{-webkit-transition: all .30s linear; -moz-transition: all .30s linear; -ms-transition: all .30s linear; -o-transition: all .30s linear; transition: all .30s linear;}
+.pointer{cursor:pointer;}
 
 /* Smartphones ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
@@ -24,6 +77,9 @@ header#main{padding:10px;background: #f5f5f5;border-bottom: 1px solid #e5e5e5;}
 @media only screen  and (min-width : 1224px) {
     body:before { content: "desktop"; display: none;}
     header#main{font-size:2rem;}
+    header#main h1{width:39%;display:inline-block; vertical-align: top;}
+    #logoMainHeader{position:relative; width:65px; height:50px; background-image: url(../img/loghi/toolbox.png); background-repeat: no-repeat; background-size: 100% 100%;display:inline-block;vertical-align:middle;}
+    nav#mainNav{width:60%;}
     #footerWrap{width:50%;}
     .row{margin:10px 0px;}
     .row h1{font-size: 1.5rem; width: 60%;}

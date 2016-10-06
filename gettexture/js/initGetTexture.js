@@ -35,11 +35,12 @@ $(document).ready(function(){
     $("input[name=sabbia]").on('change', function(){ $("input[name=argilla]").attr('max',100-$(this).val()); });
     $("form[name=valori]").on("submit", function(e){
         e.preventDefault();
+        var us = $("input[name=us]").val();
         var s = $("input[name=sabbia]").val();
         var a = $("input[name=argilla]").val();
         limo.val(100-(parseInt(s)+parseInt(a)));
         var l = limo.val();
-        getTexture(s, a, l, canwhidth, canheight);
+        getTexture(us, s, a, l, canwhidth, canheight);
     });
     reset.on("click", function(){
         $("path").attr('class','');

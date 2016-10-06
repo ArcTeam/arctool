@@ -1,5 +1,4 @@
-function getTexture(s,a,l,canwhidth,canheight){
-    console.log("sabbia: "+s+"\nargilla: "+a+"\nlimo: "+l);
+function getTexture(us,s,a,l,canwhidth,canheight){
     $("path").attr('class','');
     $("#risultatoContent").show();
     var res = $("#risultato");
@@ -21,9 +20,27 @@ function getTexture(s,a,l,canwhidth,canheight){
     var yOff = canheight;
     var y = yOff-(yOff*parseFloat(a)*0.01);
     var h = yOff - y;
-    var l = (2*h)/1.73;
-    var x = xOff-(xOff*parseFloat(s)*0.01)-(l/2);
+    var lh = (2*h)/1.73;
+    var x = xOff-(xOff*parseFloat(s)*0.01)-(lh/2);
     pallino(x,y, xOff, yOff)
+
+    var matrix = res.text();
+    $("#data tbody").append("<tr><td><i class='fa fa-times remove' aria-hidden='true'></i></td><td>"+us+"</td><td>"+s+"</td><td>"+a+"</td><td>"+l+"</td><td>"+matrix+"</td></tr>");
+    var tr = $("#data tbody tr").length;
+    if(tr>0){
+        $("button[name='csvLink']").show().click(function(){
+            $("#dataContent").fadeIn('fast');
+            $(".remove").click(function(){
+                $(this).parent().parent().remove();
+                var tr = $("#data tbody tr").length;
+                if(tr==0){$("button[name='csvLink']").hide();}
+            });
+            $("#closeDiv").click(function(){ $("#dataContent").fadeOut('fast'); })
+        });
+    }else{
+        $("button[name='csvLink']").hide();
+    }
+
 }
 
 function pallino(x,y,xOff,yOff){
